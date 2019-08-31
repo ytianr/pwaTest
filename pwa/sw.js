@@ -1,4 +1,5 @@
 self.addEventListener('install', function (e) {
+	console.log('swjs\'s,installFn');
     e.waitUntil(
         caches.open('v1').then(cache => {
             return cache.addAll([
